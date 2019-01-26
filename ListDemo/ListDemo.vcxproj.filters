@@ -13,9 +13,6 @@
     <ClCompile Include="ListMainForm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CUserInfo.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MenuWnd.h">
@@ -25,6 +22,20 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="StdAfx.h" />
-    <ClInclude Include="CUserInfo.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="resource1.h" />
+    <ClInclude Include="kutfconv.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="flash10a.tlh">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ListDemo.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>
