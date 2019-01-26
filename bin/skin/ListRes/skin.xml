@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Window caption="0,0,0,30" roundcorner="5,5,5,5" sizebox="4,4,4,4" mininfo="600,320" showdirty="true">
  <Font id="0" name="宋体" size="13" bold="false"/>
  <Font id="1" name="宋体" size="12"/>
@@ -15,10 +15,10 @@
 	</HorizontalLayout>
 	<HorizontalLayout height="35" inset="0,4,0,8">
 		<VerticalLayout inset="8,4,2,2" width="80">
-			<Text text="Domain/ip:" textcolor="#000000" font="1"></Text>
+			<Text text="Domain/ip:" textcolor="#FF0000" font="1"></Text>
 		</VerticalLayout>
 		<VerticalLayout>
-			<Edit height="23" text="List控件添加使用案例，每行可以响应事件测试" bordercolor="#C6CFD8" name="input" bkimage="file='search_bg.png' source='0,0,258,23' corner='1,1,1,1'"/>
+			<Edit height="23" text="List控件添加使用案例，每行可以响应事件测试" bordercolor="#D2B48C" name="input" bkimage="file='search_bg.png' source='0,0,258,23' corner='1,1,1,1'"/>
 		</VerticalLayout>
 		<VerticalLayout width="80">
 			<Button name="btn_search" text="Search" font="0" float="true" pos="5,0,63,23" maxwidth="63" maxheight="23" normalimage="file='button.png' source='0,0,63,23'" hotimage="file='button.png' source='0,23,63,46'" pushedimage="file='button.png' source='0,23,63,46'"/>

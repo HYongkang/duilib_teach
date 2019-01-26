@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window size="300,300" sizebox="5,5,5,5" caption="0,0,0,40" mininfo="300,300">
+    <VerticalLayout bkcolor="#FFbfbfbf" >
+        <HorizontalLayout  height="50">
+          <Text text="图屋"  padding="52,10,10,10" align="center"/>
+          <Button  name="minbtn" bkimage="min.png" tooltip="最小化" pushedimage="min1.png" pos="0,0,20,20"/>
+          <Button name="maxbtn" bkimage="max.png" tooltip="最大化" pushedimage="max1.png" pos="0,0,20,20"/>
+          <Button name="restorebtn" visible="false" bkimage="max1.png" tooltip="向下还原" pushedimage="max1.png" pos="0,0,20,20"/>
+          <Button name="closebtn" bkimage="close.png" tooltip="关闭" pushedimage="close1.png" pos="0,0,20,20"/>
+        </HorizontalLayout>
+      <HorizontalLayout  height="50">
+      <Edit name="pic_path" bordercolor="#FF000000" focusbordercolor="#FFF0FFFF" multiline="false"
+            textcolor="#FF483D8B" tooltip="这里显示图片路径" height ="20"  bkcolor="#FFFFFFFF"
+            padding="10,10,10,10"/>
+        <Button name="btn_PicSearch" tooltip="搜索/打开" borderround="5,5" hotimage="picSearch.png" bkcolor="#FFdbdbdb" bkimage="picSearch1.png" pos="0,0,20,20" padding="0,10,10,10"/>
+      </HorizontalLayout>
+      <HorizontalLayout bkcolor="#FFF5FFFA" pos="20,20,0,0" borderround="20,20" padding="50,5,50,5" >
+        <control name="picControl" bkimage="picLoading.png" pos="0,0,0,0" padding="15,15,10,10"/>
+      </HorizontalLayout>
+      <HorizontalLayout  pos="0,0,0,50" padding="1,0,1,1" >
+        <Text text="可以输入图片路径，再点击右边按钮即可显示"  padding="10,20,10,1" align="center"/>
+      </HorizontalLayout>
+    </VerticalLayout>
+</Window>

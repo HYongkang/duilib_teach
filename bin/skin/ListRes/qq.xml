@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window size="385,295" sizebox="5,5,5,5" caption="0,0,0,40">
+    <VerticalLayout bkcolor="#FFF5FFFA" >
+        
+          <HorizontalLayout bkimage="qq_hbk.png" height="165">
+            <HorizontalLayout padding="309,3,5,5">
+          <Button  name="btn_QDown" bkimage="btn_QDown0.png" tooltip="下拉" pushedimage="btn_QDown.png" pos="0,0,20,20" padding="0,0,2,2"/>
+          <Button  name="minbtn" bkimage="btn_QMin0.png" tooltip="最小化" pushedimage="btn_QMin.png" pos="0,0,20,20" padding="2,-3,2,2"/>
+          <!--<Button name="maxbtn" bkimage="max.png" tooltip="最大化" pushedimage="max1.png" pos="0,0,20,20"/>
+          <Button name="restorebtn" visible="false" bkimage="max1.png" tooltip="向下还原" pushedimage="max1.png" pos="0,0,20,20"/>-->
+          <Button name="closebtn" bkimage="btn_QClose0.png" tooltip="关闭" pushedimage="btn_QClose0.png" pos="0,0,15,15" padding="9,3,2,2"/>
+          </HorizontalLayout>
+        </HorizontalLayout>
+
+      <HorizontalLayout height="85">
+        <Button  name="hImage" width="75" bkimage="ico_QQ.png" tooltip="更换头像" padding="30,5,10,10"/>
+        <VerticalLayout width="175" padding="10,10,10,10">
+        <Edit  name="userNmae_Edit" height="30"  maxchar="11" borderround="10,10" bordercolor="#FF00BFFF" bordersize="1" focusbordercolor="#FF4169E1" multiline="false" textcolor="#FF483D8B"  tooltip="输入用户名"/>
+          <Control height="1"/>
+        <Edit  name="passWord_Edit" height="30"  maxchar="16" borderround="10,10" bordercolor="#FF00BFFF" bordersize="1" focusbordercolor="#FF4169E1" multiline="false" textcolor="#FF483D8B" password="true"  tooltip="输入密码"/>
+        <Control height="30"/>
+        </VerticalLayout>
+      </HorizontalLayout>
+
+      <HorizontalLayout height="45" >
+        
+        <Button  name="btn_QQLogion" width="175" borderround="10,10"  bkimage="btn_QLogion.png" tooltip="登录"  padding="125,5,100,10"/>
+        
+      </HorizontalLayout>
+      
+    </VerticalLayout>
+</Window>

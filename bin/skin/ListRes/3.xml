@@ -1,13 +1,54 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Window size="300,300" sizebox="5,5,5,5">  
-    <HorizontalLayout  bkcolor="#FFFFFFFF" bordersize="1" inset="1,1,1,1">  
-        <Button width="50" bkcolor="#FFFFFF00" />  
-        <!--插入一个控件占住间隔-->
-        <Control width="10"/>  
-        <Button width="50" bkcolor="#FFFF00FF" />  
-        <Control width="10"/>  
-        <Button width="50" bkcolor="#FF00FFFF" />  
-        <!--使用padding控制间隔-->
-        <Button width="50" padding="10,0,0,0" bkcolor="#FF123456" />  
-    </HorizontalLayout>  
+<Window size="400,200" sizebox="5,5,5,5" roundcorner="40,40" caption="0,0,0,42" >
+  <HorizontalLayout  bkcolor="#FFFFFFFF"  bordersize="0" inset="0,0,0,0">
+
+    <HorizontalLayout  bkcolor="#FFFFFFFF"  bordersize="1" inset="1,1,1,1">
+      <control bkimage="logo.JPG"/>
+        <!--<control  bkcolor="#FFFFFFFF" 
+               bkimage="file='logo.JPG' res='' restype='0' dest='0,0,0,0'
+               source='10,10,0,0' corner='0,0,0,0' mask='#FF0000' fade='255' hole='false'
+               xtiled='false' ytiled='false')">
+          
+        </control>-->
+    </HorizontalLayout>
+  
+  <VerticalLayout  bkcolor="#FFFAF0E6" bordersize="1" inset="1,1,1,1">
+    
+    <HorizontalLayout  bkcolor="#FFFAF0E6" bordersize="1" inset="1,1,1,1" height="20">
+    <Text text="百特思维，全新体验" align="center" font="0" height="10" padding="5,5,5,5"/>
+    </HorizontalLayout>
+        
+    <VerticalLayout  bkcolor="#FFFAF0E6" bordersize="1" inset="1,1,1,1">
+      <HorizontalLayout  bkcolor="#FFFAF0E6" height="80" bordersize="1" inset="1,1,1,1">
+      <VerticalLayout  bkcolor="#FFFAF0E6" bordersize="0" inset="1,1,0,1">
+    <Text text="用户名:" height="20"   padding="10,15,0,10"/>
+    <Text text="密码:" height="20"   padding="10,20,0,10" />  
+      </VerticalLayout>
+      
+      <VerticalLayout  bkcolor="#FFFAF0E6" bordersize="1" width="130" inset="1,1,1,1">
+    <Edit name="ret_UserName" maxchar="11" bordercolor="#FF000000" focusbordercolor="#FFF0FFFF" multiline="false" textcolor="#FF483D8B" tooltip="请在这里输入你的用户名" height ="20" width="150" bkcolor="#FFFFFFFF"  padding="0,12,10,10"/>
+    <Edit name="ret_Password" maxchar="16" bordercolor="#FF000000" focusbordercolor="#FFF0FFFF" multiline="false" textcolor="#FF483D8B" tooltip="请在这里输入你的密码" height ="20" width="150" password="true"  bkcolor="#FFFFFFFF"  padding="0,12,10,10"/>
+      </VerticalLayout>
+      
+        </HorizontalLayout>
+    <HorizontalLayout  bkcolor="#FFFAF0E6" height="30" bordersize="1" inset="1,1,1,1">
+      <Button name="btn_QQ" bkimage="QQ.JPG" width="20" height="18" padding="50,5,5,5" />
+        <Button name="btn_WeChat" bkimage="WeChat.JPG" width="20" height="18" padding="0,5,5,5" />
+    <Button name="btn_MicroBlog" bkimage="MicroBlog.JPG" width="20" height="18" padding="0,5,5,5" />
+    <Button name="btn_GitHub" bkimage="GitHub.JPG" width="20" height="18" padding="0,5,5,5" />
+        </HorizontalLayout>
+    </VerticalLayout>
+  
+    <VerticalLayout  bkcolor="#FFFAF0E6" bordersize="1" inset="1,1,1,1" height="65">
+  <HorizontalLayout  bkcolor="#FFF5FFFA" bordersize="1" inset="1,1,1,1" height="50">
+   <Button text="注册" name="btn_Register" bkcolor="#FFFAF0E6" hotbkcolor="#FFDEB887" tooltip="如已注册，您可直接登录" borderround="10,10" width="30" height="30" padding="40,15,20,10"  />
+   <Button text="登录" name="btn_Login" bkcolor="#FFFAF0E6" hotbkcolor="#FFDEB887" tooltip="如未注册，先注册再登录" borderround="10,10" width="30" height="30" padding="30,15,20,10"  />
+  </HorizontalLayout>
+      
+    <Option text="URL: www.batesiwei.com" hottextcolor="#FFFF0000" focusedtextcolor="#FFD2B48C" align="center"  height="10"/>
+      
+  </VerticalLayout>
+    
+  </VerticalLayout>
+    </HorizontalLayout>
 </Window>

@@ -1,9 +1,128 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Window size="300,300" sizebox="5,5,5,5">  
-    <HorizontalLayout  bkcolor="#FFFFFFFF" bordersize="1" inset="1,1,1,1">  
-    		<!--水平布局-->
+<Window size="600,600" sizebox="5,5,5,5">
+  <!--总体垂直布局-->
+ <VerticalLayout  bkcolor="#FFFFFFFF" bordersize="1" inset="1,1,1,1">
+   <!--竖三、横三下竖三-->
+   <!--横三、竖三右横三-->
+   
+   <!--水平布局-->
+  <HorizontalLayout  bkcolor="#FFFFFFFF" bordersize="1" inset="1,1,1,1">  
+        
+    <!--竖三、横三下竖三-->
+    <HorizontalLayout  bkcolor="#FFFFFFFF" bordersize="1" inset="1,1,1,1">
+      
+      <!--竖三-->
+      <HorizontalLayout  bkcolor="#FFFFFFFF" bordersize="1" inset="1,1,1,1">
         <Control width="50" bkcolor="#FFFFFF00" />  
         <Control width="50" bkcolor="#FFFF00FF" />  
-        <Control width="50" bkcolor="#FF00FFFF" />  
-    </HorizontalLayout>  
+        <Control width="50" bkcolor="#FF00FFFF" />
+      </HorizontalLayout>
+      
+      <!--总体垂直：横三下竖三-->
+      <VerticalLayout  bkcolor="#FFFFFFFF" bordersize="1" inset="1,1,1,1">
+        <VerticalLayout  bkcolor="#FFFFFFFF" bordersize="1" inset="1,1,1,1">
+        <Control height="50" bkcolor="#FFFFFF00" />
+        <Control height="50" bkcolor="#FFFF00FF" />
+        <Control height="50" bkcolor="#FF00FFFF" />
+        </VerticalLayout>
+        <HorizontalLayout  bkcolor="#FFFFFFFF" bordersize="1" inset="1,1,1,1">
+          <Control width="50" bkcolor="#FFFFFF00" />
+          <Control width="50" bkcolor="#FFFF00FF" />
+          <Control width="50" bkcolor="#FF00FFFF" />
+        </HorizontalLayout>
+      </VerticalLayout>
+    </HorizontalLayout>
+
+    <!--垂直布局-->
+    <!--横三、竖三右横三-->
+     <VerticalLayout  bkcolor="#FFFFFFFF" bordersize="1" inset="1,1,1,1">
+       
+       <!--横三-->
+       <VerticalLayout  bkcolor="#FFFFFFFF" bordersize="1" inset="1,1,1,1">
+       <Control height="50" bkcolor="#FFFFFF00" />
+       <Control height="50" bkcolor="#FFFF00FF" />
+       <Control height="50" bkcolor="#FF00FFFF" />
+       </VerticalLayout>
+       
+       <!--总体水平：竖三右横三-->
+       <HorizontalLayout  bkcolor="#FFFFFFFF" bordersize="1" inset="1,1,1,1">
+         <VerticalLayout  bkcolor="#FFFFFFFF" bordersize="1" inset="1,1,1,1">
+       <Control height="50" bkcolor="#FFFFFF00" />
+       <Control height="50" bkcolor="#FFFF00FF" />
+       <Control height="50" bkcolor="#FF00FFFF" />
+         </VerticalLayout>
+         <HorizontalLayout  bkcolor="#FFFFFFFF" bordersize="1" inset="1,1,1,1">
+           <Control width="50" bkcolor="#FFFFFF00" />
+           <Control width="50" bkcolor="#FFFF00FF" />
+           <Control width="50" bkcolor="#FF00FFFF" />
+         </HorizontalLayout>
+         
+     </HorizontalLayout>
+    </VerticalLayout>
+    
+  </HorizontalLayout>
+
+
+   <!--水平布局-->
+   <!--竖三右横三、横三-->
+   <HorizontalLayout  bkcolor="#FFFFFFFF" bordersize="1" inset="1,1,1,1">
+
+     <!--垂直布局-->
+     <VerticalLayout  bkcolor="#FFFFFFFF" bordersize="1" inset="1,1,1,1">
+       
+       <!--总体水平：竖三右横三-->
+       <HorizontalLayout  bkcolor="#FFFFFFFF" bordersize="1" inset="1,1,1,1">
+         <HorizontalLayout  bkcolor="#FFFFFFFF" bordersize="1" inset="1,1,1,1">
+     <Control width="50" bkcolor="#FFFFFF00" />
+     <Control width="50" bkcolor="#FFFF00FF" />
+     <Control width="50" bkcolor="#FF00FFFF" />
+         </HorizontalLayout>
+         <VerticalLayout  bkcolor="#FFFFFFFF" bordersize="1" inset="1,1,1,1">
+           <Control height="50" bkcolor="#FFFFFF00" />
+           <Control height="50" bkcolor="#FFFF00FF" />
+           <Control height="50" bkcolor="#FF00FFFF" />
+         </VerticalLayout>
+         
+       </HorizontalLayout>
+
+       <!--横三-->
+       <VerticalLayout  bkcolor="#FFFFFFFF" bordersize="1" inset="1,1,1,1"> 
+     <Control height="50" bkcolor="#FFFFFF00" />
+     <Control height="50" bkcolor="#FFFF00FF" />
+     <Control height="50" bkcolor="#FF00FFFF" />
+       </VerticalLayout>
+     </VerticalLayout>
+
+
+     <!--水平布局-->
+     <!--竖三下横三、竖三-->
+     <HorizontalLayout  bkcolor="#FFFFFFFF" bordersize="1" inset="1,1,1,1">
+
+       <!--总体垂直：竖三下横三-->
+   <VerticalLayout  bkcolor="#FFFFFFFF" bordersize="1" inset="1,1,1,1">
+     <HorizontalLayout  bkcolor="#FFFFFFFF" bordersize="1" inset="1,1,1,1">
+       <Control width="50" bkcolor="#FFFFFF00" />
+       <Control width="50" bkcolor="#FFFF00FF" />
+       <Control width="50" bkcolor="#FF00FFFF" />
+     </HorizontalLayout>
+     <VerticalLayout  bkcolor="#FFFFFFFF" bordersize="1" inset="1,1,1,1">
+       <Control height="50" bkcolor="#FFFFFF00" />
+       <Control height="50" bkcolor="#FFFF00FF" />
+       <Control height="50" bkcolor="#FF00FFFF" />
+     </VerticalLayout>
+   </VerticalLayout>
+
+       <!--竖三-->
+       <HorizontalLayout  bkcolor="#FFFFFFFF" bordersize="1" inset="1,1,1,1">
+         <Control width="50" bkcolor="#FFFFFF00" />
+         <Control width="50" bkcolor="#FFFF00FF" />
+         <Control width="50" bkcolor="#FF00FFFF" />
+       </HorizontalLayout>
+    </HorizontalLayout>
+     
+     
+   </HorizontalLayout>
+ 
+   
+  </VerticalLayout>
 </Window>

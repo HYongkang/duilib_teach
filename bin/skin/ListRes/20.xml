@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window size="400,300" caption="0,0,0,290" roundcorner="3,3" mininfo="400,300"  sizebox="5,5,5,5" >
+  <VerticalLayout bkcolor="#FFFFFFFF">
+    <HorizontalLayout height="20" >
+      <Button text="文件助手"  height="20" textcolor="#FF0000FF" bkcolor="#FFFFA500" name="楷体" font="0" />
+      
+      <Button name="minbtn" width="36" height="20" normalimage="file='timg.jpg'"/>
+      <Button name="maxbtn" width="36" height="20" normalimage="file='menu_bk.png'"/>
+      <Button name="restorebtn" width="36" height="20" visible="false" normalimage="file='timg (1).jpg'"/>
+      <Button name="closebtn" width="36" height="20" normalimage="file='frame_btn_close_normal.bmp'"/>
+    </HorizontalLayout>
+    <VerticalLayout >
+      <Control height="30"/>
+      <HorizontalLayout height="20">
+        <Control width="100" height="20"/>
+        <Edit height="20"  maxchar="10"  bordersize="1" bordercolor="#FF000000"/>
+        <Control width="30" height="20"/>
+        <Button name="login" text="选择文件" width="50" height="20" normalimage="file='button_hover.png'"/>
+        <Control width="100"/>
+      </HorizontalLayout>
+      <HorizontalLayout >
+        <Control width="100" />
+        <VerticalLayout >
+          <Control height="20"/>
+          <Container bkcolor="#FFFF0000"/>
+        </VerticalLayout>
+        <Control width="100" />
+      </HorizontalLayout>
+    </VerticalLayout>
+
+    <HorizontalLayout height="20" bkcolor="#FFFFB6C1" >
+      <Control />
+      <Button height="20"  width="80" text="联系在线客服"  textcolor="#FFFF0000" align="left"/>
+    </HorizontalLayout>
+  </VerticalLayout>
+</Window>
