@@ -1,0 +1,12 @@
+﻿  ListMainForm.cpp
+D:\Program Files (x86)\VC\atlmfc\include\afx.h(359): warning C4005: “ASSERT”: 宏重定义
+          d:\project\c++\tj\duilib_teach\duilib\Core/UIBase.h(28) : 参见“ASSERT”的前一个定义
+ListMainForm.cpp(91): warning C4018: “<”: 有符号/无符号不匹配
+ListMainForm.cpp(244): warning C4996: 'access': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _access. See online help for details.
+          D:\Program Files (x86)\VC\include\io.h(302) : 参见“access”的声明
+ListMainForm.cpp(257): warning C4996: 'access': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _access. See online help for details.
+          D:\Program Files (x86)\VC\include\io.h(302) : 参见“access”的声明
+d:\project\c++\tj\duilib_teach\listdemo\listmainform.cpp(363): warning C4715: “CheckLogin”: 不是所有的控件路径都返回值
+d:\project\c++\tj\duilib_teach\listdemo\listmainform.cpp(336): warning C4715: “GetCodeNum”: 不是所有的控件路径都返回值
+  Main.cpp
+  ListDemo.vcxproj -> D:\Project\c++\TJ\duilib_teach\\bin\ListDemo.exe
