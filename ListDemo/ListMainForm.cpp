@@ -127,45 +127,7 @@ CString UTF82WCS(const char* szU8)
 	return unicodeString;
 }
 
-//char* UTF8ToUnicode(char* szUTF8)
-//{
-//	int wcscLen = ::MultiByteToWideChar(CP_UTF8, NULL, szUTF8, strlen(szUTF8), NULL, 0);//得到所需空间的大小
-//	wchar_t* wszcString = new wchar_t[wcscLen + 1];//给'\0'分配空间
-//	::MultiByteToWideChar(CP_UTF8, NULL, szUTF8, strlen(szUTF8), wszcString, wcscLen);   //转换
-//	wszString[wcsLen] = '\0';
-//	char *m_char;
-//	int len = WideCharToMultiByte(CP_ACP, 0, wszcString, wcslen(wszcString), NULL, 0, NULL, NULL);
-//	m_char = new char[len + 1];
-//	WideCharToMultiByte(CP_ACP, 0, wszcString, wcslen(wszcString), m_char, len, NULL, NULL);
-//	m_char[len] = '\0';
-//	return m_char;
-//}
 
-
-
-/**
-*这是一个全局测试函数，不属于ListMainForm类。
-*一个类里面的函数应该和类密切相关，不相干的函数需要抽出到其他类或者Utils中
-*
-*/
-//void TestMemoryFunc()
-//{
-//	int* array = new int[10]; //使用vs提供的内存查看工具可以得知 数组的内存是连续的，可以通过memset来统一初始化内存
-//	memset(array, 0x0F, sizeof(int) * 10);
-//
-//
-//	char chInput[512];
-//	sprintf(chInput, "int:%d\n", array[0]);//手动修改内存， 请将array中的第一个数字大小修改为15，
-//	DUITRACE(_T("array---[0]: %s"), chInput);//注意用此方法可以输出信息到vs的调试窗口中
-//
-//	//OutputDebugString(chInput);
-//
-//	//TestMem* m;
-//	//for (int i = 0; i < 190464; i++) {
-//	//	m =new  TestMem;
-//	//	m->count = 15;
-//	//}
-//}
 
 DWORD WINAPI ListMainForm::Search(LPVOID lpParameter)
 {
@@ -493,18 +455,6 @@ string WChar2Ansi(LPCWSTR pwszSrc)
 	return strTemp;
 }
 
-//void ListMainForm::SaveUserInfo(Context context, string number,
-//	string password) {
-//	//读入文本
-//	ifstream ins("text.txt");
-//	ofstream ous("text.txt");
-//	map<string, string> UserInfo = GetUrlInfo(strUnicode);
-//	map<string, string>::iterator iter = UserInfo.begin();
-//	for (; iter != UserInfo.end(); iter++) {
-//		ous << iter->first << " " << iter->second << endl;
-//	}
-//
-//}
 
 void ListMainForm::OnQQLogin() {
 	string str_UInfo = GetUserInfo(m_pUNEdit, m_pPwdEdit);
@@ -524,7 +474,8 @@ void ListMainForm::OnQQLogin() {
 			map<string, string> UserInfo = GetUrlInfo(strUnicode);
 
 			//ifstream ins("text.txt");
-			ofstream ous("D:\\Project\\c++\\duilib_teach\\text\\UserInfo.txt");
+			//D:\Project\c++\My\HykProject\text
+			ofstream ous("D:\\Project\\c++\\My\\HykProject\\text\\UserInfo.txt");
 			//ous.open("text.txt", ios::in | ios::out | ios::binary);
 			map<string, string>::iterator iter = UserInfo.begin();
 			for (; iter != UserInfo.end(); iter++) {
@@ -585,14 +536,7 @@ void  ListMainForm::Notify(TNotifyUI& msg)
 		else if (msg.pSender == m_pLogin)
 		{
 			OnQQLogin();
-			/*if (!GetUrlReturn())
-			{
-				::MessageBox(NULL, "登录失败", _T("提示"), MB_OK);
-			}*/
-			/*if (m_pQRcodepage) m_pQRcodepage->SetVisible(true);
-			if (m_pLoginpage) m_pLoginpage->SetVisible(false);
-
-			if (m_pSkinlayout) m_pSkinlayout->SetVisible(false);*/
+	
 		}
 		else if (msg.pSender == m_pQRcode)
 		{
@@ -783,21 +727,7 @@ LRESULT  ListMainForm::OnNcHitTest(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL
 	RECT rcClient;
 	::GetClientRect(*this, &rcClient);
 
-	/*if (!::IsZoomed(*this)) {
-		RECT rcSizeBox = m_pm.GetSizeBox();
-		if (pt.y-3 < rcClient.top + rcSizeBox.top) {
-			if (pt.x-3 < rcClient.left + rcSizeBox.left) return HTTOPLEFT;
-			if (pt.x+3 > rcClient.right - rcSizeBox.right) return HTTOPRIGHT;
-			return HTTOP;
-		}
-		else if (pt.y > rcClient.bottom - rcSizeBox.bottom) {
-			if (pt.x < rcClient.left + rcSizeBox.left) return HTBOTTOMLEFT;
-			if (pt.x > rcClient.right - rcSizeBox.right) return HTBOTTOMRIGHT;
-			return HTBOTTOM;
-		}
-		if (pt.x < rcClient.left + rcSizeBox.left) return HTLEFT;
-		if (pt.x > rcClient.right - rcSizeBox.right) return HTRIGHT;
-	}*/
+	
 
 	RECT rcCaption = m_pm.GetCaptionRect();
 	if (pt.x >= rcClient.left + rcCaption.left && pt.x < rcClient.right - rcCaption.right \
