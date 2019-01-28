@@ -67,9 +67,9 @@ void ListMainForm::Init()
 	m_pWebBrowser = static_cast<CWebBrowserUI*>(m_pm.FindControl(_T("web")));
 }
 
-//将左右侧引号去除
-void ListMainForm::Format(string& str) {
-	if (str.length() && str[0] == 34) {//判断，如有引号则剔除引号
+/*将左右侧引号去除*/
+void ListMainForm::RemoveDoubleQuotationMarks(string& str) {
+	if (str.length() && str[0] == '"') {//判断，如有引号则剔除引号
 		str = str.substr(1, str.length() - 2);
 	}
 }
@@ -79,17 +79,17 @@ void ListMainForm::StrSplit(const string& str, string& str_Key, string& str_Valu
 	int len = str.find(':'); //将key value分开
 	str_Key = str.substr(0, len);//key
 	str_Value = str.substr(len + 1, str.length());//value
-	Format(str_Key);
-	Format(str_Value);
+	RemoveDoubleQuotationMarks(str_Key);
+	RemoveDoubleQuotationMarks(str_Value);
 }
 
 
-//获取键值对
+/*获取键值对*/
 map<string, string> ListMainForm::GetUrlInfo(const string& strRsp) {
 	map<string, string>UserInfoMap;
 	string str="";
 	for (int index = 1; index < strRsp.length() - 1; index++) {
-		if (strRsp[index] != ',' && index != strRsp.length() - 2 || strRsp[index] == ',' && strRsp[index+1]!=34) {
+		if (strRsp[index] != ',' && index != strRsp.length() - 2 || strRsp[index] == ',' && strRsp[index+1]!='"') {
 			str += strRsp[index];
 		}
 		else {

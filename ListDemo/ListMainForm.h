@@ -71,7 +71,7 @@ public:
 
 	map<string, string> GetUrlInfo(const string& resString);
 
-	void Format(string& str);
+	void RemoveDoubleQuotationMarks(string& str);
 
 	void StrSplit(const string& str, string& s1, string& s2);
 
@@ -200,9 +200,11 @@ private:
 	CButtonUI* m_pbkc_green;
 	CButtonUI* m_pbkc_red;
 	CButtonUI* m_pbkc_bkiamge;
+
     CEditUI* m_pEdit;
 	CEditUI* m_pUNEdit;
 	CEditUI* m_pPwdEdit;
+
     CHorizontalLayoutUI* m_pLogin;
     CHorizontalLayoutUI* m_pQRcodepage;
     CVerticalLayoutUI* m_pSkinlayout;
